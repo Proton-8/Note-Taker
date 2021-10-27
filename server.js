@@ -1,13 +1,13 @@
 // Standard cut and paste Express.js stuff
 const express = require('express');
 const path = require('path');
-const routes = require('./routes/index');
+const routes = require('./routes/api');
 const html = require('./routes/htmlRoutes');
 
 const app = express();
 
 // use default port or 3001
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3002;
 
 
 
