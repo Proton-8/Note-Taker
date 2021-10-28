@@ -17,4 +17,28 @@ router.post("/notes", (req, res) => {
    
 });
 
+
+router.delete("/notes/:id", (req, res) => {
+    fs.readFile("db/db.json", "utf8", (err, data) => {
+      let noteId = req.params.id;
+      let note = JSON.parse(data);
+      note = note.filter((note) => {
+          if (noteId != note.id) {
+            return true;
+          } else {
+            return false;
+          };
+      }); 
+      fs.writeFile("db/db.json", JSON.stringify(note), (err) => {
+        if (err)
+        throw err;
+        // confirmation
+        res.send(console.log("Deleted Successfully"));
+      })
+    });
+
+  });
+
+
+
 module.exports = router;

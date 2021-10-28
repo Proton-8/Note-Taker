@@ -6,7 +6,7 @@ const html = require('./routes/htmlRoutes');
 
 const app = express();
 
-// use default port or 3001
+// use default port or 3002
 const PORT = process.env.PORT || 3002;
 
 
@@ -23,5 +23,5 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.listen(PORT, function(){
-    console.log(`Listening on: http://localhost:${PORT} 🚀`);
+    console.log(`Listening on: http://localhost:${PORT}`);
 });
