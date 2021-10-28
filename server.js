@@ -21,7 +21,7 @@ app.use('/', html);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-
+// if all good, list the location
 app.listen(PORT, function(){
-    console.log(`Listening on: http://localhost:${PORT} 🚀`);
+    console.log(`Listening on: http://localhost:${PORT}`);
 });
