@@ -3,25 +3,40 @@
 
 ## Description
 
-This app will allow a user to view and create daily tasks. 
-
+This app will allow a user to view, create and delete daily tasks. 
 
 
 ## Acceptance Criteria
 
-When the user loads the page, they should be given the option to go to the Notes page and then review and add any notes/tasks.
+* WHEN I open the Note Taker
+THEN I am presented with a landing page with a link to a notes page
 
-The user should be able to:
+ * WHEN I click on the link to the notes page
+    * THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
 
-  * Add notes.
+ * WHEN I click on the Write icon in the navigation at the top of the page
+    * THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 
-  * Review notes.
 
+* WHEN I enter a new note title and the note’s text
+  * THEN a Save icon appears in the navigation at the top of the page
+
+* WHEN I click on the Save icon
+  * THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes
+
+* WHEN I click on an existing note in the list in the left-hand column
+   * THEN that note appears in the right-hand column
+* BONUS - WHEN I click on the delete (trashcan) icon
+  * THEN that note is deleted from the note list
+
+<br>
 
 ## Deployed Website
 
 [Note-Tracker](https://young-beyond-94120.herokuapp.com/) * MIT License
 
+
+<br>
 
 
 ## Technologies Used
@@ -50,7 +65,6 @@ The user should be able to:
 
 
 <img src="./public/Note-1.JPG" alt="second page demo">
-
 
 </p>
 
