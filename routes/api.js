@@ -14,6 +14,8 @@ router.post("/notes", (req, res) => {
     data.push(newNote);
     fs.writeFileSync("./db/db.json", JSON.stringify(data))
     res.json(newNote);
+       // confirmation
+       res.send(console.log("Note added Successfully!"));
    
 });
 
